@@ -22,44 +22,44 @@
 //                         tag.src = "https://www.youtube.com/embed/d9lwtKgMkh8";
 //                         var firstScriptTag = document.getElementsByTagName('script')[0];
 //                         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                        var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          videoId: 'd9lwtKgMkh8',
-          playerVars: {   
-                'autoplay': 1,   
-                'rel': 0,
-                'showinfo': 0,
-                'modestbranding': 1,
-                'playsinline': 1,
-                'showinfo': 0,
-                'rel': 0,
-                'controls': 0,
-                'color':'white',
-                'loop': 1,
-                'mute':1,
-                // 'origin': 'https://meeranblog24x7.blogspot.com/'
-          },
-          events: {
-            'onReady': onPlayerReady,
-            // 'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-      function onPlayerReady(event) {
-        player.playVideo();
-        player.mute();
-      }
-  var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
+//                         var player;
+//       function onYouTubeIframeAPIReady() {
+//         player = new YT.Player('player', {
+//           videoId: 'd9lwtKgMkh8',
+//           playerVars: {   
+//                 'autoplay': 1,   
+//                 'rel': 0,
+//                 'showinfo': 0,
+//                 'modestbranding': 1,
+//                 'playsinline': 1,
+//                 'showinfo': 0,
+//                 'rel': 0,
+//                 'controls': 0,
+//                 'color':'white',
+//                 'loop': 1,
+//                 'mute':1,
+//                 // 'origin': 'https://meeranblog24x7.blogspot.com/'
+//           },
+//           events: {
+//             'onReady': onPlayerReady,
+//             // 'onStateChange': onPlayerStateChange
+//           }
+//         });
+//       }
+//       function onPlayerReady(event) {
+//         player.playVideo();
+//         player.mute();
+//       }
+//   var done = false;
+//       function onPlayerStateChange(event) {
+//         if (event.data == YT.PlayerState.PLAYING && !done) {
+//           setTimeout(stopVideo, 6000);
+//           done = true;
+//         }
+//       }
+//       function stopVideo() {
+//         player.stopVideo();
+//       }
     </script>
   </body>
 </html>
