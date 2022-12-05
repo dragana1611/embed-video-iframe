@@ -18,10 +18,10 @@
     </style>
   </head>
   <body>
-    <div id="player"></div>
-<!--     <iframe width="972" height="547" src="https://www.youtube.com/embed/d9lwtKgMkh8?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1" title="Happy Jazz Music ☕ Positive Winter Jazz and Sweet December Bossa Nova to Put You in a Good Mood ❄️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <div id="ytPlayer"></div>
+
 <!--     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4T-7sapA3Q0?loop=1&autoplay=1&mute=1&playlist=4T-7sapA3Q0&showinfo=0&modestbranding=0&autohide=1&fs=0&controls=0" frameborder="0"></iframe> -->
-    
+<!--   https://www.youtube.com/embed/vwrvbjBF7YQ   -->
     <script>
      
       var tag = document.createElement('script');
@@ -30,13 +30,13 @@
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          videoId: '4T-7sapA3Q0',
+        player = new YT.Player('ytPlayer', {
+          videoId: 'vwrvbjBF7YQ',
           playerVars: { 
                 'loop': 1,                
                 'autoplay': 1,   
                 'mute':1,
-            'playlist':'4T-7sapA3Q0',
+            'playlist':'vwrvbjBF7YQ',
                 'rel': 0,
                 'showinfo': 0,
                 'modestbranding': 0,
@@ -54,15 +54,9 @@
       }
         
       function onPlayerReady(event) {
-
         event.target.playVideo();
-        event.target.mute();
-        
-      }
-  
-      function stopVideo() {
-        player.stopVideo();
-      }
+        event.target.mute();        
+      }     
     </script>
   </body>
 </html>
