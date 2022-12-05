@@ -31,7 +31,7 @@
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          videoId: '4T-7sapA3Q0',
+          videoId: '4T-7sapA3Q0?loop',
           playerVars: { 
                 'loop': 1,                
                 'autoplay': 1,   
@@ -57,7 +57,7 @@
 //         player.mute();
         event.target.playVideo();
         event.target.mute();
-        event.target.loop();
+        
       }
   var done = false;
       function onPlayerStateChange(event) {
