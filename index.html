@@ -47,8 +47,10 @@
         });
       }
       function onPlayerReady(event) {
-        player.playVideo();
-        player.mute();
+//         player.playVideo();
+//         player.mute();
+        event.target.playVideo();
+        event.target.mute();
       }
   var done = false;
       function onPlayerStateChange(event) {
