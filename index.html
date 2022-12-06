@@ -42,7 +42,7 @@
       //at which point you can construct a YT.Player object to insert a video player on your page.
       
       let player;
-      const onYouTubeIframeAPIReady = () => {
+      function onYouTubeIframeAPIReady(){
         //The constructor for the video player specifies the following parameters: The first parameter specifies either the DOM element or the id of the HTML element
         //where the API will insert the <iframe> tag containing the player. By default, an <iframe> displays as an inline-block element. The second parameter is an object
         //that specifies player options.
@@ -68,7 +68,7 @@
       }
       
       // 4. The API will call this function when the video player is ready.
-      const onPlayerReady = event => {
+      function onPlayerReady(event){
         event.target.playVideo();
         event.target.mute();        
       }     
