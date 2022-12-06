@@ -10,6 +10,7 @@
       body{
         touch-action: pan-x pan-y;
       }
+      
     iframe{
       pointer-events: none;
       position: absolute;
@@ -31,6 +32,7 @@
     <script>
       document.addEventListener("touchmove", function(e){
     e.preventDefault();
+        console.log("test", e)
 },{passive: false});
       //https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player
       //The IFrame player API lets you embed a YouTube video player on your website and control the player using JavaScript. 
