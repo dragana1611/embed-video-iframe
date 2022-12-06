@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> 
     <title>iframe-video</title>
     <style>
+      *{
+        touch-action: pan-x pan-y;
+      }
     iframe{
       pointer-events: none;
       position: absolute;
@@ -19,6 +22,7 @@
     </style>
   </head>
   <body>
+    <h1>Zoom text</h1>
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="ytPlayer"></div>
 
