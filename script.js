@@ -30,12 +30,12 @@ function onYouTubeIframeAPIReady() {
   //that specifies player options.
 
   player = new YT.Player("ytPlayer", {
-    videoId: "vwrvbjBF7YQ",
+    videoId: "RFimmzu8nTw",
     playerVars: {
       loop: 1,
       autoplay: 1,
       mute: 1,
-      playlist: "vwrvbjBF7YQ",
+      playlist: "RFimmzu8nTw",
       rel: 0, //this parameter indicates whether the player should show related videos when playback of the initial video ends. If the parameter's value is set to 1, which is the default value, then the player does show related videos. If the parameter's value is set to 0, then the player does not show related videos. After the change, you will not be able to disable related videos. Instead, if the rel parameter is set to 0, related videos will come from the same channel as the video that was just played.
       showinfo: 0,
       modestbranding: 1, //This parameter lets you use a YouTube player that does not show a YouTube logo. Set the parameter value to 1 to prevent the YouTube logo from displaying in the control bar.
